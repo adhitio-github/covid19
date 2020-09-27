@@ -134,7 +134,7 @@ def grafik(df,option_1,option_2,start,split,end):
 
 def tampil_1(option_1,option_2,df,start,split,end):
     #Display the course price
-    st.subheader(option_1+" "+option_2+" Price\n")
+    st.subheader(option_1+" "+option_2+" \n")
     grafik(df,option_1,option_2,start,split,end)
     
     #Get statistics on the data

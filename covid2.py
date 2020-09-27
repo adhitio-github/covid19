@@ -120,7 +120,7 @@ def grafik(df,option_1,option_2,start,split,end):
     plt.plot(df[split:end],color='blue',label='TestSet')
 
     plt.legend()
-    plt.title(option_1+" "+option_2+" Price")
+    plt.title(option_1+" "+option_2+" ")
     plt.xlabel('Date')
     #plt.xticks(rotation=90)
     locator = mdate.MonthLocator()

@@ -11,7 +11,7 @@ import streamlit.components.v1 as stc
 # File Processing Pkgs
 #import pandas as pd
 #import docx2txt
-#from PIL import Image 
+from PIL import Image 
 #from PyPDF2 import PdfFileReader
 #import pdfplumber
 

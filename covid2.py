@@ -38,7 +38,8 @@ def prediksi(im):
 
     from tensorflow.keras.models import load_model
     #MODEL_PATH = '(A-JOS2)_EfficientNet_b7_CovidXray_/model.h5'
-    MODEL_PATH = '(A-JOS1)_CovidXRay_4000_MobileNet-V2/model.h5'
+    #MODEL_PATH = '(A-JOS1)_CovidXRay_4000_MobileNet-V2/model.h5'
+    MODEL_PATH = 'model.h5'
     model = load_model(MODEL_PATH,compile=False, custom_objects={'KerasLayer': hub.KerasLayer})
     
     # read image

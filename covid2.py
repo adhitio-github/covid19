@@ -5,14 +5,13 @@ import numpy as np
 import tensorflow as tf
 import tensorflow_hub as hub
 
-
 import streamlit as st
 import streamlit.components.v1 as stc
 
 # File Processing Pkgs
-import pandas as pd
+#import pandas as pd
 #import docx2txt
-from PIL import Image 
+#from PIL import Image 
 #from PyPDF2 import PdfFileReader
 #import pdfplumber
 

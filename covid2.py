@@ -3,7 +3,7 @@ import streamlit as st
 #import os
 #import matplotlib.pylab as plt
 import numpy as np
-#import tensorflow as tf
+import tensorflow as tf
 import tensorflow_hub as hub
 #import streamlit.components.v1 as stc
 

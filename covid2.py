@@ -9,14 +9,14 @@ import tensorflow as tf
 import tensorflow_hub as hub
 #import streamlit.components.v1 as stc
 
-import io
+#import io
 #file_buffer = st.file_uploader(...)
 #text_io = io.TextIOWrapper(file_buffer)
 
 from tensorflow.keras.models import load_model
 
 # File Processing Pkgs
-import pandas as pd
+# import pandas as pd
 from PIL import Image  
 
 
@@ -60,7 +60,7 @@ def prediksi(im):
 
 st.title("Diagnosa COVID-19 Chest X-Ray")
 image_file_upload = st.sidebar.file_uploader("Upload Image",type=['png','jpeg','jpg'])
-image_file = image_file_upload.read()
+#image_file = image_file_upload.read()
 
 #uploaded_file = st.sidebar.file_uploader(type="xls", encoding =None, key = 'a')   
 #bytes_data = uploaded_file.read()

@@ -59,13 +59,18 @@ def prediksi(im):
 
 
 st.title("Diagnosa COVID-19 Chest X-Ray")
-image_file = st.file_uploader("Upload Image",type=['png','jpeg','jpg'])
+image_file_upload = st.sidebar.file_uploader("Upload Image",type=['png','jpeg','jpg'])
+image_file = image_file_upload.read()
+
+#uploaded_file = st.sidebar.file_uploader(type="xls", encoding =None, key = 'a')   
+#bytes_data = uploaded_file.read()
 
 if image_file is not None:
     file_details = {"Filename":image_file.name,"FileType":image_file.type,"FileSize":image_file.size}
     st.write(file_details)
         
-    img_uji = load_image(image_file)
+    img_uji = load_image(image_file)   
+
     st.write("HASIL PREDIKSI = ",prediksi(img_uji))
 
     st.image(img_uji)  # ,width=250,height=250)

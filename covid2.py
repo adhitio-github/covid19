@@ -2,14 +2,14 @@ import streamlit as st
 #st.set_option('deprecation.showfileUploaderEncoding', False)
 
 #import itertools
-#import os
+import os
 #import matplotlib.pylab as plt
 import numpy as np
 import tensorflow as tf
 import tensorflow_hub as hub
 #import streamlit.components.v1 as stc
 
-#import io
+import io
 #file_buffer = st.file_uploader(...)
 #text_io = io.TextIOWrapper(file_buffer)
 
@@ -17,10 +17,8 @@ from tensorflow.keras.models import load_model
 
 # File Processing Pkgs
 import pandas as pd
-#import docx2txt
 from PIL import Image  
-#from PyPDF2 import PdfFileReader
-#import pdfplumber
+
 
 # Fxn
 @st.cache
@@ -43,8 +41,6 @@ def prediksi(im):
         return np.stack(imgs_arr, axis=0)
 
     from tensorflow.keras.models import load_model
-    #MODEL_PATH = '(A-JOS2)_EfficientNet_b7_CovidXray_/model.h5'
-    #MODEL_PATH = '(A-JOS1)_CovidXRay_4000_MobileNet-V2/model.h5'
     MODEL_PATH = 'model.h5'
     model = load_model(MODEL_PATH,compile=False, custom_objects={'KerasLayer': hub.KerasLayer})
     
@@ -66,7 +62,6 @@ st.title("Diagnosa COVID-19 Chest X-Ray")
 image_file = st.file_uploader("Upload Image",type=['png','jpeg','jpg'])
 
 if image_file is not None:
-
     file_details = {"Filename":image_file.name,"FileType":image_file.type,"FileSize":image_file.size}
     st.write(file_details)
         

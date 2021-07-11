@@ -2,7 +2,7 @@
 tensorflow-cpu
 #streamlit==0.67.0
 streamlit
-numpy==1.18.5
+numpy==1.19.2
 tensorflow_hub
 #tensorflow.keras.models
 

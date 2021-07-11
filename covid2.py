@@ -78,6 +78,6 @@ if image_file is not None:
 
 else:
     st.header("About")
-    st.info("Diagnosa COVID-19")
+    st.info("Prediksi diagnosa ini dilakukan dengan metoda Deep Learning Convolutional Neural Network, model yang dipergunakan adalah hasil trainning dari 10.300 image dengan nilai akurasi > 90'%")
     st.info("Adh1t10.2@gmail.com")
-    st.text("Adhitio")
+    st.text("Terimakasih, semoga bermanfaat di era pandemi ini")
